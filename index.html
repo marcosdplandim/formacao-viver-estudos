@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '804008821475185');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=804008821475185&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assista a aula!</title>
+
+  <!-- VTurb Speed Optimization -->
+  <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+  <link rel="preload" href="https://scripts.converteai.net/e40d1fe4-bcec-4d35-a292-950fe4ecb73d/players/69ab05c16975d631dce29f3e/v4/player.js" as="script">
+  <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+  <link rel="preload" href="https://cdn.converteai.net/e40d1fe4-bcec-4d35-a292-950fe4ecb73d/69167c8fd1f522b62fdefcbb/main.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br">
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #F5C842;
+      --gold-bright:#FFD700;
+      --gold-dim:   rgba(245,200,66,0.07);
+      --gold-mid:   rgba(245,200,66,0.14);
+      --gold-bdr:   rgba(245,200,66,0.22);
+      --gold-glow:  rgba(245,200,66,0.12);
+      --red:        #E8453C;
+      --red-bright: #ff4444;
+      --red-dim:    rgba(232,69,60,0.10);
+      --red-bdr:    rgba(232,69,60,0.28);
+      --bg0:        #060608;
+      --bg1:        #0d0d0f;
+      --bg2:        #121215;
+      --bg3:        #1a1a1e;
+      --bg4:        #202025;
+      --line:       rgba(255,255,255,0.06);
+      --line2:      rgba(255,255,255,0.10);
+      --text:       #f0efe8;
+      --text2:      #b8b7af;
+      --text3:      #6b6a64;
+      --money:      #2de080;
+      --money-dim:  rgba(45,224,128,0.10);
+
+      --ff-head: 'Sora', sans-serif;
+      --ff-body: 'DM Sans', sans-serif;
+      --ease:    cubic-bezier(0.16, 1, 0.3, 1);
+      --ease2:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      --r-sm: 8px;
+      --r-md: 14px;
+      --r-lg: 20px;
+      --r-xl: 28px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--bg0);
+      color: var(--text2);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 9997;
+    }
+
+    .container    { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+    .container-sm { max-width: 880px;  margin: 0 auto; padding: 0 28px; }
+    .container-xs { max-width: 700px;  margin: 0 auto; padding: 0 28px; }
+
+    /* ── TYPOGRAPHY ── */
+    h1,h2,h3,h4 { font-family: var(--ff-head); color: var(--text); line-height: 1.15; }
+    .t-gold  { color: var(--gold); }
+    .t-red   { color: var(--red-bright); }
+    .t-money { color: var(--money); }
+
+    .grad-gold {
+      background: linear-gradient(135deg, #F5C842 0%, #fde882 50%, #F5A623 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── SECTION RHYTHM ── */
+    .section { padding: 96px 0; }
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--line2) 30%, var(--line2) 70%, transparent 100%);
+    }
+
+    .section-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--ff-body);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      padding: 5px 14px 5px 10px;
+      border: 1px solid var(--gold-bdr);
+      border-radius: 100px;
+      background: var(--gold-dim);
+    }
+    .section-chip::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* ── CTA BUTTON ── */
+    .main-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #E8453C 0%, #c9342b 100%);
+      color: #fff;
+      font-family: var(--ff-head);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 18px 44px;
+      border-radius: 10px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.2px;
+      transition: all 0.25s var(--ease);
+      box-shadow: 0 4px 20px rgba(232,69,60,0.25), inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .main-cta::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .main-cta:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 12px 36px rgba(232,69,60,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+    .main-cta:active { transform: translateY(-1px); }
+    .main-cta.pulse {
+      animation: cta-pulse 2.8s ease-in-out infinite;
+    }
+    @keyframes cta-pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(232,69,60,0.25), 0 0 0 0 rgba(232,69,60,0.35); }
+      50%       { box-shadow: 0 4px 20px rgba(232,69,60,0.25), 0 0 0 14px rgba(232,69,60,0); }
+    }
+
+    /* ── VSL SECTION ── */
+    .vsl-section {
+      background: var(--bg0);
+      padding: 56px 0 48px;
+      text-align: center;
+      position: relative;
+    }
+    .vsl-section::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(245,200,66,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .vsl-eyebrow {
+      font-family: var(--ff-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      opacity: 0.85;
+    }
+    .vsl-headline {
+      font-family: var(--ff-head);
+      font-size: clamp(22px, 3.5vw, 36px);
+      font-weight: 800;
+      color: var(--text);
+      max-width: 760px;
+      margin: 0 auto 32px;
+      line-height: 1.2;
+    }
+    .video-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--bg1);
+      box-shadow: 0 0 0 1px var(--line), 0 32px 80px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── SOCIAL PROOF BAR ── */
+    .proof-bar {
+      background: var(--bg1);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    .proof-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .proof-stat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--ff-head);
+    }
+    .proof-stat-num {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold);
+    }
+    .proof-stat-label {
+      font-size: 0.8rem;
+      color: var(--text3);
+      font-family: var(--ff-body);
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+    .proof-divider {
+      width: 1px;
+      height: 32px;
+      background: var(--line2);
+    }
+
+    /* ── RESULTS CAROUSEL ── */
+    .results-carousel-section {
+      background: var(--bg1);
+      padding: 88px 0;
+    }
+    .section-heading {
+      font-family: var(--ff-head);
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .carousel-subtitle {
+      font-size: clamp(14px, 1.8vw, 17px);
+      color: var(--text2);
+      line-height: 1.85;
+      max-width: 800px;
+      margin: 0 auto 56px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .carousel-track {
+      display: flex;
+      gap: 16px;
+      animation: carousel-scroll 65s linear infinite;
+    }
+    .carousel-track:hover { animation-play-state: paused; }
+    .carousel-item {
+      flex-shrink: 0;
+      width: 280px;
+      height: 380px;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      border: 1px solid var(--line2);
+      transition: transform 0.3s var(--ease), border-color 0.3s, box-shadow 0.3s;
+    }
+    .carousel-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: var(--gold-bdr);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .carousel-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @keyframes carousel-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(calc(-296px * 9)); }
+    }
+
+    /* ── STUDENT RESULTS ── */
+    .student-results-section {
+      background: var(--bg2);
+      padding: 88px 0;
+    }
+    .result-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 48px;
+      background: var(--bg1);
+      border-radius: var(--r-xl);
+      border: 1px solid var(--line);
+      transition: border-color 0.35s, transform 0.35s var(--ease), box-shadow 0.35s;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-item::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold-bdr) 50%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+    .result-item:hover {
+      border-color: var(--gold-bdr);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    }
+    .result-item:hover::before { opacity: 1; }
+    .result-item.reverse .result-image { order: 2; }
+    .result-item.reverse .result-content { order: 1; }
+
+    .result-image {
+      width: 100%;
+      height: 340px;
+      border-radius: var(--r-md);
+      overflow: hidden;
+    }
+    .result-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s var(--ease);
+    }
+    .result-item:hover .result-image img { transform: scale(1.05); }
+
+    .result-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: var(--gold-dim);
+      border: 1px solid var(--gold-bdr);
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .result-title {
+      font-family: var(--ff-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .result-description { font-size: 1rem; color: var(--text2); line-height: 1.85; }
+
+    /* ── ABOUT MARIA ── */
+    .about-maria-section {
+      background: var(--bg1);
+      padding: 88px 0;
+      position: relative;
+    }
+    .about-maria-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 80% 50%, rgba(245,200,66,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .about-maria-content {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      grid-template-rows: auto 1fr;
+      gap: 0 60px;
+      align-items: start;
+    }
+    .about-maria-question {
+      grid-column: 1 / -1;
+      font-family: var(--ff-head);
+      font-size: clamp(22px, 3.5vw, 34px);
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.2;
+    }
+    .about-maria-image {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .about-maria-image img {
+      width: 100%; height: auto;
+      border-radius: var(--r-lg);
+      display: block;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+    }
+    .about-maria-text { grid-column: 1; grid-row: 2; }
+    .about-maria-paragraph {
+      font-size: 1.02rem;
+      color: var(--text2);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+    .about-maria-paragraph strong { color: var(--gold); font-weight: 600; }
+
+    /* ── PAIN SECTION ── */
+    .pain-section {
+      background: var(--bg0);
+      padding: 88px 0;
+      position: relative;
+    }
+    .pain-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 100%, rgba(232,69,60,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .pain-intro {
+      font-size: 1.05rem;
+      color: var(--text2);
+      margin-bottom: 40px;
+      line-height: 1.85;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pain-list { display: grid; gap: 10px; margin-bottom: 48px; }
+    .pain-item {
+      background: var(--bg2);
+      padding: 22px 26px;
+      border-radius: var(--r-sm);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--red);
+      transition: border-color 0.25s, transform 0.25s var(--ease), background 0.25s;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .pain-item:hover {
+      background: var(--bg3);
+      border-left-color: var(--gold);
+      transform: translateX(5px);
+    }
+    .pain-item-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .pain-item-text { font-size: 1rem; color: var(--text); line-height: 1.7; }
+    .pain-conclusion {
+      background: linear-gradient(135deg, var(--bg2) 0%, var(--bg3) 100%);
+      padding: 40px 44px;
+      border-radius: var(--r-lg);
+      border: 1.5px solid var(--gold-bdr);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .pain-conclusion::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 200px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .pain-conclusion-text {
+      font-family: var(--ff-head);
+      font-size: 1.2rem;
+      color: var(--text);
+      line-height: 1.65;
+      font-weight: 600;
+    }
+
+    /* ── WHY SECTION ── */
+    .why-section { background: var(--bg2); padding: 88px 0; }
+    .why-list { display: grid; gap: 10px; margin-top: 48px; }
+    .why-item {
+      padding: 28px 32px;
+      background: var(--bg1);
+      border-radius: var(--r-sm);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      transition: border-color 0.25s, transform 0.25s var(--ease), background 0.25s;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0 20px;
+      align-items: start;
+    }
+    .why-item:hover {
+      background: var(--bg3);
+      border-left-color: var(--red);
+      transform: translateX(6px);
+    }
+    .why-arrow {
+      font-size: 1rem;
+      color: var(--red);
+      font-weight: 900;
+      margin-top: 3px;
+    }
+    .why-item-title {
+      font-family: var(--ff-head);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .why-item-description { font-size: 0.95rem; color: var(--text2); line-height: 1.8; }
+
+    /* ── FORMAÇÃO PRESENTATION ── */
+    .formacao-presentation-section {
+      background: var(--bg1);
+      padding: 88px 0;
+      position: relative;
+    }
+    .formacao-presentation-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 10%, var(--gold) 50%, transparent 90%);
+    }
+    .formacao-presentation-content { max-width: 860px; margin: 0 auto; text-align: center; }
+    .formacao-description {
+      font-size: 1.12rem;
+      color: var(--text);
+      line-height: 1.9;
+      margin-bottom: 18px;
+    }
+    .formacao-description strong { color: var(--gold); font-weight: 700; }
+    .formacao-sub-description {
+      font-size: 1rem;
+      color: var(--text2);
+      line-height: 1.9;
+      margin-bottom: 36px;
+    }
+    .formacao-benefits-list {
+      background: var(--bg0);
+      border: 1.5px solid var(--gold-bdr);
+      border-radius: var(--r-lg);
+      padding: 36px 36px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .benefit-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .benefit-item:first-child { padding-top: 0; }
+    .check-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .benefit-item p { font-size: 1rem; color: var(--text); line-height: 1.65; margin: 0; }
+    .formacao-closing {
+      background: var(--bg0);
+      border-left: 3px solid var(--gold);
+      padding: 28px 32px;
+      border-radius: var(--r-sm);
+      text-align: left;
+    }
+    .formacao-closing p { font-size: 1.05rem; color: var(--text); line-height: 1.9; margin: 0; }
+
+    /* ── PILLARS ── */
+    .pillars-section { background: var(--bg2); padding: 88px 0; }
+    .pillars-subtitle {
+      text-align: center;
+      font-size: 1.05rem;
+      color: var(--text2);
+      margin: 0 auto 56px;
+      line-height: 1.85;
+      max-width: 840px;
+      padding: 0 20px;
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .pillar-card {
+      background: var(--bg1);
+      padding: 40px 36px;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.35s, transform 0.35s var(--ease), box-shadow 0.35s;
+    }
+    .pillar-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s var(--ease);
+    }
+    .pillar-card:hover {
+      border-color: var(--gold-bdr);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .pillar-card:hover::after { transform: scaleX(1); }
+    .pillar-number {
+      font-family: var(--ff-head);
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, var(--gold) 0%, rgba(245,200,66,0.4) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .pillar-title {
+      font-family: var(--ff-head);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.35;
+    }
+    .pillar-description { font-size: 0.93rem; color: var(--text2); line-height: 1.8; }
+    .pillars-conclusion {
+      text-align: center;
+      padding: 28px 36px;
+      background: var(--bg1);
+      border-radius: var(--r-md);
+      border: 1.5px solid var(--gold-bdr);
+    }
+    .pillars-conclusion p {
+      font-family: var(--ff-head);
+      font-size: 1.2rem;
+      color: var(--text);
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* ── DIFFERENTIATION ── */
+    .differentiation-section { background: var(--bg0); padding: 88px 0; }
+    .diff-intro {
+      text-align: center;
+      color: var(--text2);
+      font-size: 1.05rem;
+      margin-bottom: 52px;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.85;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 1040px;
+      margin: 0 auto 40px;
+    }
+    .comparison-column {
+      background: var(--bg1);
+      padding: 40px 36px;
+      border-radius: var(--r-lg);
+      border: 1px solid;
+    }
+    .comparison-column.negative { border-color: var(--red-bdr); }
+    .comparison-column.positive { border-color: var(--gold-bdr); }
+    .comparison-header {
+      font-family: var(--ff-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid;
+    }
+    .comparison-column.negative .comparison-header { color: var(--red-bright); border-bottom-color: var(--red-bdr); }
+    .comparison-column.positive .comparison-header { color: var(--gold); border-bottom-color: var(--gold-bdr); }
+    .comparison-item {
+      color: var(--text2);
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      padding-left: 34px;
+      position: relative;
+    }
+    .comparison-item::before { content: ''; position: absolute; left: 0; top: 3px; font-size: 1rem; }
+    .comparison-column.negative .comparison-item::before { content: '❌'; }
+    .comparison-column.positive .comparison-item::before { content: '✅'; }
+    .diff-conclusion {
+      text-align: center;
+      font-family: var(--ff-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 40px;
+      background: var(--bg1);
+      border-radius: var(--r-md);
+      border: 1.5px solid var(--gold-bdr);
+    }
+
+    /* ── REASONS ── */
+    .reasons-section { background: var(--bg2); padding: 88px 0; }
+    .reasons-grid { display: grid; gap: 12px; max-width: 940px; margin: 0 auto; }
+    .reason-card {
+      background: var(--bg1);
+      padding: 28px 32px;
+      border-radius: var(--r-md);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      transition: border-color 0.25s, transform 0.25s var(--ease), background 0.25s;
+    }
+    .reason-card:hover {
+      background: var(--bg3);
+      border-left-color: var(--red);
+      transform: translateX(6px);
+    }
+    .reason-number {
+      background: linear-gradient(135deg, var(--gold) 0%, #F5A623 100%);
+      color: #000;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-head);
+      font-size: 1.1rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .reason-content h3 {
+      font-family: var(--ff-head);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .reason-content p { color: var(--text2); font-size: 0.97rem; line-height: 1.8; }
+
+    /* ── SUMMARY ── */
+    .summary-section { background: var(--bg1); padding: 88px 0; }
+    .summary-list { max-width: 860px; margin: 0 auto; display: grid; gap: 10px; }
+    .summary-item {
+      background: var(--bg2);
+      padding: 22px 28px;
+      border-radius: var(--r-sm);
+      border: 1px solid var(--gold-bdr);
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      transition: background 0.2s, transform 0.25s var(--ease), box-shadow 0.25s;
+    }
+    .summary-item:hover {
+      background: var(--bg3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+    .summary-check { font-size: 1.3rem; flex-shrink: 0; }
+    .summary-text { color: var(--text); font-size: 1rem; line-height: 1.75; }
+
+    /* ── BONUS COURSES ── */
+    .bonus-courses-section { background: var(--bg2); padding: 88px 0; }
+    .bonus-course-item {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 56px;
+      align-items: center;
+      margin-bottom: 20px;
+      background: var(--bg1);
+      padding: 44px;
+      border-radius: var(--r-xl);
+      border: 1px solid var(--line);
+      transition: border-color 0.35s, transform 0.35s var(--ease), box-shadow 0.35s;
+      position: relative;
+      overflow: hidden;
+    }
+    .bonus-course-item::before {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold-bdr), transparent);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+    .bonus-course-item:hover {
+      border-color: var(--gold-bdr);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    }
+    .bonus-course-item:hover::before { opacity: 1; }
+    .bonus-course-item.reverse { grid-template-columns: 1fr 380px; }
+    .bonus-course-item.reverse .course-image { order: 2; }
+    .bonus-course-item.reverse .course-info  { order: 1; }
+    .course-image {
+      width: 100%;
+      height: 280px;
+      border-radius: var(--r-md);
+      overflow: hidden;
+    }
+    .course-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s var(--ease);
+    }
+    .bonus-course-item:hover .course-image img { transform: scale(1.05); }
+    .bonus-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--money);
+      background: var(--money-dim);
+      border: 1px solid rgba(45,224,128,0.2);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .course-name {
+      font-family: var(--ff-head);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .course-description { font-size: 1rem; color: var(--text2); line-height: 1.85; }
+
+    /* ── GUARANTEE ── */
+    .guarantee-section-new {
+      background: var(--bg0);
+      padding: 88px 0;
+      text-align: center;
+      position: relative;
+    }
+    .guarantee-section-new::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(45,224,128,0.04) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .guarantee-subtitle {
+      font-size: 1.05rem;
+      color: var(--text2);
+      margin-bottom: 52px;
+      line-height: 1.9;
+    }
+    .guarantee-two-columns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 52px;
+      max-width: 1020px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .guarantee-badge-column { flex: 0 0 260px; }
+    .guarantee-image { max-width: 100%; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5)); }
+    .guarantee-text-column { flex: 1; min-width: 300px; max-width: 640px; }
+    .guarantee-text-box {
+      background: var(--bg2);
+      color: var(--text);
+      padding: 40px 44px;
+      border-radius: var(--r-lg);
+      text-align: left;
+      border: 1.5px solid var(--gold-bdr);
+      position: relative;
+    }
+    .guarantee-text-box::before {
+      content: '"';
+      position: absolute;
+      top: -10px; left: 24px;
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--gold);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+    }
+    .guarantee-text-box p { font-size: 1.05rem; line-height: 1.95; margin: 0; color: var(--text2); }
+    .guarantee-text-box strong { color: var(--gold); font-weight: 700; }
+
+    /* ── PRICE SECTION ── */
+    .price-anchor { background: var(--bg1); padding: 80px 0; }
+    .price-anchor .container { max-width: 680px; }
+    .anchor-title {
+      font-family: var(--ff-head);
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 40px;
+      letter-spacing: 0.3px;
+    }
+    .products-list {
+      background: var(--bg0);
+      border: 1.5px solid var(--gold-bdr);
+      padding: 28px 32px;
+      border-radius: var(--r-lg);
+      margin-bottom: 28px;
+    }
+    .product-item {
+      display: flex;
+      align-items: center;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .product-item:last-child { border-bottom: none; }
+    .product-name { font-size: 0.97rem; color: var(--text); font-weight: 400; line-height: 1.5; }
+
+    .price-highlight-box {
+      background: var(--bg0);
+      border: 2px solid var(--gold-bdr);
+      border-radius: var(--r-xl);
+      padding: 52px 44px 44px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .price-highlight-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .price-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 400px; height: 300px;
+      background: radial-gradient(ellipse, rgba(245,200,66,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .price-offer-badge {
+      position: absolute;
+      top: -14px; left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold) 0%, #F5A623 100%);
+      color: #000;
+      padding: 7px 28px;
+      border-radius: 100px;
+      font-family: var(--ff-head);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(245,200,66,0.35);
+    }
+    .bf-installments {
+      font-size: 1rem;
+      color: var(--text3);
+      font-weight: 400;
+      margin-bottom: 6px;
+      padding-top: 8px;
+    }
+    .bf-installment-value {
+      font-family: var(--ff-head);
+      font-size: clamp(3rem, 8vw, 5.2rem);
+      background: linear-gradient(135deg, var(--money) 0%, #00cc6a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      margin-bottom: 8px;
+      line-height: 1;
+      position: relative;
+    }
+    .bf-total-small { font-size: 1rem; color: var(--text3); margin-bottom: 28px; }
+    .economy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--ff-head);
+      font-size: 0.92rem;
+      color: var(--money);
+      font-weight: 600;
+      background: var(--money-dim);
+      padding: 10px 22px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+      border: 1px solid rgba(45,224,128,0.2);
+    }
+    .price-highlight-box .main-cta {
+      font-size: 1.1rem;
+      padding: 20px 48px;
+      width: 100%;
+      border-radius: var(--r-md);
+    }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--bg2); padding: 80px 0; }
+    .faq-title {
+      font-family: var(--ff-head);
+      text-align: center;
+      font-size: clamp(22px, 3.5vw, 32px);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 48px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .faq-item {
+      background: var(--bg1);
+      border-radius: var(--r-sm);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      transition: border-color 0.25s;
+    }
+    .faq-item:hover, .faq-item.active { border-color: var(--gold-bdr); }
+    .faq-question {
+      color: var(--text);
+      padding: 18px 52px 18px 22px;
+      cursor: pointer;
+      font-family: var(--ff-head);
+      font-weight: 600;
+      font-size: 0.9rem;
+      position: relative;
+      transition: color 0.2s, background 0.2s;
+      line-height: 1.5;
+      user-select: none;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-item.active .faq-question { color: var(--gold); }
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 18px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-weight: 300;
+      transition: transform 0.3s var(--ease);
+    }
+    .faq-item.active .faq-question::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer {
+      padding: 0 22px 20px;
+      color: var(--text2);
+      font-size: 0.93rem;
+      line-height: 1.8;
+      display: none;
+    }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-cta-wrap { text-align: center; margin-top: 52px; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--bg0);
+      color: var(--text3);
+      padding: 48px 0;
+      text-align: center;
+      font-size: 0.78rem;
+      line-height: 1.8;
+      border-top: 1px solid var(--line);
+    }
+    .footer p { margin-bottom: 10px; }
+    .footer a { color: var(--red); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    /* ── WHATSAPP FLOAT ── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 58px; height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+      z-index: 9999;
+      transition: transform 0.25s var(--ease2), box-shadow 0.25s;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 8px 32px rgba(37,211,102,0.55);
+    }
+    .whatsapp-float svg { width: 30px; height: 30px; }
+
+    /* ── FADE IN ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+    }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 968px) {
+      .about-maria-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .about-maria-question { grid-column: 1; }
+      .about-maria-image {
+        grid-column: 1; grid-row: auto;
+        max-width: 320px; margin: 0 auto;
+      }
+      .about-maria-text { grid-column: 1; grid-row: auto; }
+
+      .result-item, .result-item.reverse {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 28px;
+      }
+      .result-item .result-image,
+      .result-item.reverse .result-image { order: 1 !important; height: 260px; }
+      .result-item .result-content,
+      .result-item.reverse .result-content { order: 2 !important; }
+
+      .pillars-grid { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+
+      .bonus-course-item,
+      .bonus-course-item.reverse { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
+      .bonus-course-item .course-image,
+      .bonus-course-item.reverse .course-image { order: -1 !important; height: 240px; }
+      .bonus-course-item .course-info,
+      .bonus-course-item.reverse .course-info { order: 1 !important; }
+
+      .guarantee-two-columns { flex-direction: column; gap: 32px; }
+      .guarantee-image { max-width: 180px; }
+
+      .faq-grid { grid-template-columns: 1fr; }
+      .price-highlight-box { padding: 44px 24px 36px; }
+      .main-cta { font-size: 0.92rem !important; padding: 17px 24px !important; }
+      .proof-bar-inner { gap: 24px; }
+      .proof-divider { display: none; }
+    }
+    @media (max-width: 480px) {
+      .section { padding: 64px 0; }
+      .carousel-item { width: 220px; height: 300px; }
+      @keyframes carousel-scroll {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(calc(-236px * 9)); }
+      }
+      .guarantee-text-box { padding: 28px 22px; }
+      .guarantee-text-box::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════
+       VSL
+  ═══════════════════════════ -->
+  <section class="vsl-section">
+    <div class="container">
+      <p class="vsl-eyebrow">Assista até o final ↓</p>
+      <h1 class="vsl-headline">Como professores, concurseiros e estudantes estão faturando <span class="grad-gold">R$ 10.000+/mês</span> vendendo materiais de estudo online</h1>
+      <div class="video-wrapper">
+        <vturb-smartplayer id="vid-69ab05c16975d631dce29f3e" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+      </div>
+      <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/e40d1fe4-bcec-4d35-a292-950fe4ecb73d/players/69ab05c16975d631dce29f3e/v4/player.js",
+        s.async=!0,
+        document.head.appendChild(s);
+      </script>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════
+       PROOF BAR
+  ═══════════════════════════ -->
+  <div class="proof-bar">
+    <div class="container">
+      <div class="proof-bar-inner">
+        <div class="proof-stat">
+          <span class="proof-stat-num">+10 mil</span>
+          <span class="proof-stat-label">alunos formados</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <span class="proof-stat-num">#1</span>
+          <span class="proof-stat-label">do Brasil no nicho</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <span class="proof-stat-num">7 dígitos</span>
+          <span class="proof-stat-label">faturados na Hotmart</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <span class="proof-stat-num">90 dias</span>
+          <span class="proof-stat-label">de garantia total</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       CAROUSEL
+  ═══════════════════════════ -->
+  <section class="results-carousel-section">
+    <div class="container" style="text-align:center; margin-bottom: 0;">
+      <div class="section-chip" style="margin: 0 auto 18px; display:inline-flex;">Resultados reais</div>
+      <h2 class="section-heading fade-in">Serve para <span class="grad-gold">qualquer nicho</span></h2>
+      <p class="carousel-subtitle fade-in">A Formação Viver de Estudos é o MAIOR treinamento do Brasil, com mais de 10 mil alunos, focado em vender materiais de estudos na internet! Veja alguns dos resultados dos nossos alunos</p>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="images/resultado25.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado26.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado27.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado28.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado29.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado30.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado31.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado32.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado33.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado25.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado26.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado27.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado28.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado29.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado30.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado31.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado32.webp" alt="Resultado aluno" loading="lazy"></div>
+        <div class="carousel-item"><img src="images/resultado33.webp" alt="Resultado aluno" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       STUDENT RESULTS
+  ═══════════════════════════ -->
+  <section class="student-results-section">
+    <div class="container">
+      <div class="section-chip fade-in">Casos de sucesso</div>
+      <h2 class="section-heading fade-in" style="max-width:800px; margin:0 auto 52px; text-align:center;">
+        Meus alunos conseguem <span class="grad-gold">grandes resultados</span> — veja alguns deles
+      </h2>
+
+      <div class="result-item fade-in">
+        <div class="result-image"><img src="images/dp-012.jpg.webp" alt="Mais de 10 mil reais em 18 dias" loading="lazy"></div>
+        <div class="result-content">
+          <div class="result-tag">Caso de sucesso</div>
+          <h3 class="result-title">💰 Mais de 10 mil reais em apenas 18 dias!</h3>
+          <p class="result-description">Enquanto ainda trabalhava como servidora pública, nossa aluna alcançou um marco impressionante, superando seu salário de concursada em apenas 18 dias com a venda de seus materiais de estudo. Esse tipo de resultado está transformando a realidade de vida de centenas de alunos.</p>
+        </div>
+      </div>
+
+      <div class="result-item reverse fade-in">
+        <div class="result-image"><img src="images/WhatsApp-Image-2023-05-13-at-21.33.12-1.jpeg.webp" alt="Médico que faturou mais de 1 milhão" loading="lazy"></div>
+        <div class="result-content">
+          <div class="result-tag">Caso de sucesso</div>
+          <h3 class="result-title">🏆 Médico que faturou mais de 1 milhão com resumos</h3>
+          <p class="result-description">Decidiram largar a vida de plantões cansativos e dedicaram 100% à venda de resumos para estudantes de medicina. Resultado? Faturam mais de 100 mil por mês e já venderam mais de 1 milhão na plataforma Hotmart.</p>
+        </div>
+      </div>
+
+      <div class="result-item fade-in">
+        <div class="result-image"><img src="images/dp-013.jpg.webp" alt="Superou salário em 16 dias" loading="lazy"></div>
+        <div class="result-content">
+          <div class="result-tag">Caso de sucesso</div>
+          <h3 class="result-title">🚀 Superou salário de concursada em 16 dias</h3>
+          <p class="result-description">Enquanto ainda trabalhava como servidora pública, nossa aluna alcançou um marco impressionante, superando seu salário de concursada em apenas 16 dias com a venda de seus materiais de estudo.</p>
+        </div>
+      </div>
+
+      <div class="result-item reverse fade-in">
+        <div class="result-image"><img src="images/Imagem-do-WhatsApp-de-2024-05-02-as-19.43.29_d28027f6.jpg.webp" alt="Mais de 7 mil reais em 20 dias" loading="lazy"></div>
+        <div class="result-content">
+          <div class="result-tag">Caso de sucesso</div>
+          <h3 class="result-title">⚡ Mais de 7 mil reais em apenas 20 dias</h3>
+          <p class="result-description">Começando do zero e sem conhecimentos prévios de vendas, este aluno se destacou ao estruturar seus mapas mentais de forma atrativa e implementar uma sólida estrutura de vendas que logo no primeiro mês fez com que ele chegasse a mais de 7 mil reais faturados em 20 dias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       ABOUT MARIA
+  ═══════════════════════════ -->
+  <section class="about-maria-section">
+    <div class="container">
+      <div class="about-maria-content">
+        <h3 class="about-maria-question fade-in">
+          Como eu saí da frustração e transformei flashcards de revisão em um negócio que gerava mais de <span class="grad-gold">+R$ 10.000/Mês</span>
+        </h3>
+        <div class="about-maria-image fade-in">
+          <img src="images/Maria.webp" alt="Maria - Criadora do Viver de Estudos" loading="lazy">
+        </div>
+        <div class="about-maria-text fade-in">
+          <p class="about-maria-paragraph">Eu sou a Maria, criadora do Viver de Estudos. Trabalhava 8 horas por dia, estudava para concurso nos intervalos, fazia faculdade à noite, tudo isso por R$ 1.500. Venho de uma família simples e achava que ganhar R$ 2.500 seria "o máximo". O fundo do poço foi perceber que estava trocando minha vida inteira por migalhas. Foi quando comecei a vender os flashcards e materiais que criava para mim mesma. Começou com R$ 500/mês e explodiu quando me dediquei de verdade.</p>
+          <p class="about-maria-paragraph">Passei a fazer 10 mil, 20, 30, 50 mil/mês e mais com a venda dos meus materiais. Conquistei a minha liberdade financeira, saí do meu emprego como CLT, passei a trabalhar de casa e, depois de escalar meu negócio e validar meu método em outras áreas de estudos, criei o Viver de Estudos para ajudar milhares de outras pessoas. <strong>Minha missão é mostrar que você não precisa de concurso ou emprego tradicional para ganhar bem, seu conhecimento já vale muito dinheiro hoje.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       PAIN
+  ═══════════════════════════ -->
+  <section class="pain-section">
+    <div class="container-sm">
+      <div class="section-chip fade-in">O problema real</div>
+      <h2 class="section-heading fade-in" style="text-align:center; margin-bottom:20px; max-width:760px; margin-left:auto; margin-right:auto;">Até quando você vai deixar seu conhecimento ser <span class="t-red">desvalorizado</span>?</h2>
+      <p class="pain-intro fade-in">Se você é professor, servidor público, estudante ou um profissional que investiu anos na sua área, você conhece essa dor:</p>
+      <div class="pain-list">
+        <div class="pain-item fade-in"><div class="pain-item-icon">❌</div><div class="pain-item-text">Você se sente preso(a) a um salário que não reflete o valor do seu esforço e dedicação.</div></div>
+        <div class="pain-item fade-in"><div class="pain-item-icon">❌</div><div class="pain-item-text">Você tem um vasto conhecimento, mas o mercado (ou o serviço público) te trata como uma "peça substituível", pagando pouco e exigindo muito.</div></div>
+        <div class="pain-item fade-in"><div class="pain-item-icon">❌</div><div class="pain-item-text">Você sonha com a liberdade de horário e geográfica, mas está preso(a) à rotina monótona da CLT ou à dependência financeira.</div></div>
+        <div class="pain-item fade-in"><div class="pain-item-icon">❌</div><div class="pain-item-text">Você já tentou "ganhar dinheiro online" com métodos genéricos que exigiam que você aparecesse, dançasse no TikTok ou vendesse produtos que nem acreditava.</div></div>
+      </div>
+      <div class="pain-conclusion fade-in">
+        <p class="pain-conclusion-text">O problema não é você. O problema é que você ainda não aprendeu a monetizar o seu <span class="grad-gold">ativo mais valioso: o conhecimento que você já possui.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       WHY
+  ═══════════════════════════ -->
+  <section class="why-section">
+    <div class="container-sm">
+      <div class="section-chip fade-in">A oportunidade</div>
+      <h2 class="section-heading fade-in" style="text-align:center; max-width:840px; margin: 0 auto;">
+        Por que vender materiais é um negócio <span class="grad-gold">tão lucrativo</span> e você deveria ter começado ontem
+      </h2>
+      <div class="why-list">
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Estudante odeia perder tempo</div>
+            <div class="why-item-description">Ninguém quer passar meses lendo um livro de 500 páginas se pode ter um resumo direto ao ponto com apenas umas 20 páginas. Praticidade sempre vence.</div>
+          </div>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Gente com pouco tempo tem dinheiro para gastar</div>
+            <div class="why-item-description">O cara que trabalha 8h por dia não tem tempo de montar o próprio material. Mas tem R$ 97 sobrando para comprar algo pronto e economizar 40 horas de trabalho.</div>
+          </div>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Informação organizada vale mais que informação bruta</div>
+            <div class="why-item-description">Está tudo no Google de graça, mas as pessoas pagam por alguém que pegue aquele caos e transforme em um caminho claro. Elas não querem informação, querem CLAREZA.</div>
+          </div>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Dor imediata paga mais que promessa futura</div>
+            <div class="why-item-description">Quando alguém tem prova semana que vem, concurso se aproximando ou está desesperado para passar, ela PRECISA de solução AGORA. E paga por velocidade.</div>
+          </div>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Pessoas confiam em quem já fez o caminho</div>
+            <div class="why-item-description">Se você já passou naquele concurso, já domina aquela matéria, seu material é um atalho validado. Ninguém quer ser cobaia, todo mundo quer copiar quem já deu certo.</div>
+          </div>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-arrow">→</div>
+          <div>
+            <div class="why-item-title">Quanto mais específico, mais valioso</div>
+            <div class="why-item-description">Material genérico ninguém paga caro. Mas "Resumo Direito Constitucional para PF" ou "Redação nota 1000 ENEM" é específico na dor = vende fácil.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       FORMAÇÃO PRESENTATION
+  ═══════════════════════════ -->
+  <section class="formacao-presentation-section">
+    <div class="container">
+      <div class="formacao-presentation-content">
+        <div class="section-chip fade-in" style="margin: 0 auto 18px; display:inline-flex;">A solução</div>
+        <h2 class="section-heading fade-in" style="margin-bottom:20px; font-size:clamp(26px,4vw,44px);">E foi por isso que eu criei a <span class="grad-gold">Formação Viver de Estudos</span></h2>
+        <p class="formacao-description fade-in">Para te dar todo o passo a passo, focado em ensinar você a usar o conhecimento que <strong>JÁ DOMINA</strong> para criar e vender materiais de estudo de alta conversão.</p>
+        <p class="formacao-sub-description fade-in">Não importa se você nunca vendeu nada online ou se tem medo de aparecer. Este método foi desenhado para pessoas que:</p>
+        <div class="formacao-benefits-list fade-in">
+          <div class="benefit-item"><span class="check-icon">✅</span><p>Têm conhecimento, mas não sabem como monetizá-lo.</p></div>
+          <div class="benefit-item"><span class="check-icon">✅</span><p>Buscam uma renda extra consistente, sem largar o emprego atual.</p></div>
+          <div class="benefit-item"><span class="check-icon">✅</span><p>Querem um negócio digital escalável, sem precisar ser influencer.</p></div>
+        </div>
+        <div class="formacao-closing fade-in">
+          <p>Aqui eu coloquei <span class="t-gold">TODO o conhecimento</span> que me tirou da frustração e me fez faturar mais de <span class="t-gold">7 dígitos</span> vendendo o que eu já sabia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       PILLARS
+  ═══════════════════════════ -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="section-chip fade-in" style="margin: 0 auto 18px; display:inline-flex; text-align:center; width:100%; justify-content:center;">O método</div>
+      <h2 class="section-heading fade-in" style="text-align:center; margin-bottom:20px;">O que todos os alunos com resultado <span class="grad-gold">têm em comum</span></h2>
+      <p class="pillars-subtitle fade-in">Elas seguiram um <span class="t-gold">passo a passo validado</span> que existe dentro da Formação Viver de Estudos, que consiste em apenas <span class="t-gold">4 passos simples</span> que qualquer pessoa consegue fazer:</p>
+      <div class="pillars-grid">
+        <div class="pillar-card fade-in">
+          <div class="pillar-number">1º</div>
+          <h3 class="pillar-title">Definição e Criação do Produto</h3>
+          <p class="pillar-description">Para a construção de um negócio lucrativo com a venda materiais de estudo online, é necessário definir e criar um produto alinhado com as necessidades do público. Essa etapa vai te guiar na definição do seu nicho, público-alvo, conteúdo e desenvolvimento do material para garantir o sucesso nos resultados.</p>
+        </div>
+        <div class="pillar-card fade-in">
+          <div class="pillar-number">2º</div>
+          <h3 class="pillar-title">Comunicação e Relacionamento</h3>
+          <p class="pillar-description">Após construir um produto ideal e eficiente, é crucial criar um ambiente de comunicação e relacionamento com o público. Essa etapa vai te ajudar a se comunicar, engajar e produzir conteúdo que educa e transforma seus seguidores em clientes.</p>
+        </div>
+        <div class="pillar-card fade-in">
+          <div class="pillar-number">3º</div>
+          <h3 class="pillar-title">Estrutura de Vendas</h3>
+          <p class="pillar-description">Com um bom produto e relacionamento, é necessário implementar uma estrutura de vendas eficiente. Essa etapa vai te ensinar a criar uma estrutura de vendas que converte, com um site voltado para vendas e a gestão de produtos.</p>
+        </div>
+        <div class="pillar-card fade-in">
+          <div class="pillar-number">4º</div>
+          <h3 class="pillar-title">Divulgação e Escala</h3>
+          <p class="pillar-description">Para maximizar as vendas, é necessário ampliar a divulgação e escalar o negócio. Nessa etapa você aprenderá tudo sobre anúncios online, te capacitando a faturar de 6 a 10 mil reais mensais, sem depender de gestores de tráfego.</p>
+        </div>
+      </div>
+      <div class="pillars-conclusion fade-in">
+        <p>Somente com esses <span class="t-gold">4 pilares</span> você já é capaz de criar um negócio com a venda de materiais de estudo</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       DIFFERENTIATION
+  ═══════════════════════════ -->
+  <section class="differentiation-section">
+    <div class="container">
+      <div class="section-chip fade-in" style="margin: 0 auto 18px; display:inline-flex; width:100%; justify-content:center;">Diferenciais</div>
+      <h2 class="section-heading fade-in" style="text-align:center; margin-bottom:16px; font-size:clamp(24px,3.5vw,40px);"><span class="grad-gold">Por que a Formação é diferente</span> de tudo que você já viu?</h2>
+      <p class="diff-intro fade-in">O mercado está cheio de promessas vazias sobre "ganhar dinheiro online". Mas a Formação não é mais um curso genérico.</p>
+      <div class="comparison-grid">
+        <div class="comparison-column negative fade-in">
+          <div class="comparison-header">O que a Formação NÃO é</div>
+          <div class="comparison-item">Não é um curso de marketing digital genérico.</div>
+          <div class="comparison-item">Não exige que você seja influencer ou apareça.</div>
+          <div class="comparison-item">Não exige que você aprenda uma área nova do zero.</div>
+          <div class="comparison-item">Não é um método que te deixa sozinho(a).</div>
+        </div>
+        <div class="comparison-column positive fade-in">
+          <div class="comparison-header">O que a Formação É</div>
+          <div class="comparison-item">É um método focado exclusivamente na monetização de conhecimento educacional.</div>
+          <div class="comparison-item">É um negócio digital que valoriza sua expertise (professor, servidor, estudante).</div>
+          <div class="comparison-item">Usa o conhecimento que você JÁ DOMINA para criar produtos de alta demanda.</div>
+          <div class="comparison-item">Oferece uma comunidade de suporte com pessoas que vivem a mesma realidade que você.</div>
+        </div>
+      </div>
+      <div class="diff-conclusion fade-in">A Formação Viver de Estudos é a ponte entre o conhecimento que você tem e a renda que você merece.</div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       REASONS
+  ═══════════════════════════ -->
+  <section class="reasons-section">
+    <div class="container">
+      <div class="section-chip fade-in">Por que funciona</div>
+      <h2 class="section-heading fade-in" style="margin-bottom:44px; max-width:760px;"><span class="grad-gold">A Formação Viver de Estudos funciona</span> para você porque...</h2>
+      <div class="reasons-grid">
+        <div class="reason-card fade-in"><div class="reason-number">1</div><div class="reason-content"><h3>Você já tem o ativo principal</h3><p>O conhecimento. Você não precisa investir em estoque, nem em aprender uma nova profissão.</p></div></div>
+        <div class="reason-card fade-in"><div class="reason-number">2</div><div class="reason-content"><h3>O público já está comprando</h3><p>A demanda por materiais de estudo online (resumos, e-books, mapas mentais) é gigantesca e pessoas vendem milhares de reais todos os dias.</p></div></div>
+        <div class="reason-card fade-in"><div class="reason-number">3</div><div class="reason-content"><h3>É 100% Passo a Passo</h3><p>Quebramos o analfabetismo digital. Você terá o mapa exato, desde a criação do material até a primeira venda.</p></div></div>
+        <div class="reason-card fade-in"><div class="reason-number">4</div><div class="reason-content"><h3>Resolve a objeção do tempo</h3><p>O método foca em automatização e escalabilidade, permitindo que você concilie com seu trabalho ou estudos atuais.</p></div></div>
+        <div class="reason-card fade-in"><div class="reason-number">5</div><div class="reason-content"><h3>Foco em Resultado Rápido</h3><p>Nossa meta é que você tenha seu produto pronto e sua estrutura de vendas montada em até 4 semanas, com potencial para faturar de R$ 1 a 2 mil nos primeiros 15 dias de vendas.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       SUMMARY
+  ═══════════════════════════ -->
+  <section class="summary-section">
+    <div class="container">
+      <div class="section-chip fade-in">O que você aprende</div>
+      <h2 class="section-heading fade-in" style="margin-bottom:44px; max-width:820px;"><span class="grad-gold">Dentro da Formação</span> você terá acesso a:</h2>
+      <div class="summary-list">
+        <div class="summary-item fade-in"><div class="summary-check">✅</div><div class="summary-text">O método exato para identificar o seu nicho e o produto de estudo ideal.</div></div>
+        <div class="summary-item fade-in"><div class="summary-check">✅</div><div class="summary-text">Aulas práticas de como criar materiais de alta qualidade (mesmo sem ser designer).</div></div>
+        <div class="summary-item fade-in"><div class="summary-check">✅</div><div class="summary-text">A construção da sua estrutura de vendas (site, plataforma e copy que converte).</div></div>
+        <div class="summary-item fade-in"><div class="summary-check">✅</div><div class="summary-text">As estratégias de tráfego pago para acelerar seus resultados.</div></div>
+        <div class="summary-item fade-in"><div class="summary-check">✅</div><div class="summary-text">Acesso a templates prontos e uma comunidade de suporte.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       BONUS COURSES
+  ═══════════════════════════ -->
+  <section class="bonus-courses-section">
+    <div class="container">
+      <div class="section-chip fade-in" style="margin:0 auto 18px; display:inline-flex; width:100%; justify-content:center;">Bônus exclusivos</div>
+      <h2 class="section-heading fade-in" style="margin-bottom:52px; text-align:center;">Conheça cada bônus que você vai receber <span class="t-money">GRÁTIS</span></h2>
+
+      <div class="bonus-course-item fade-in">
+        <div class="course-image"><img src="images/Canva.webp" alt="Conteúdos Complementares de Canva" loading="lazy"></div>
+        <div class="course-info">
+          <div class="bonus-badge">🎁 Bônus grátis</div>
+          <h3 class="course-name">🎨 Conteúdos Complementares de Canva e Criação de Materiais</h3>
+          <p class="course-description">Além das etapas principais, este módulo oferece um guia completo de Canva para diagramação profissional do seu material em PDF e orientações sobre a construção de cursos e mentorias com estratégia. Aqui você aprende tudo do zero!</p>
+        </div>
+      </div>
+
+      <div class="bonus-course-item reverse fade-in">
+        <div class="course-info">
+          <div class="bonus-badge">🎁 Bônus grátis</div>
+          <h3 class="course-name">🎯 Do Zero ao Viver de Estudos</h3>
+          <p class="course-description">Para provar a eficácia do método, o bônus "Do Zero ao Viver de Estudos" mostra a criação de um material de estudo desde o início, na prática e em tempo real. É como se você estivesse olhando por cima do meu ombro enquanto eu crio tudo!</p>
+        </div>
+        <div class="course-image"><img src="images/Prancheta-2-1.png.webp" alt="Do Zero ao Viver de Estudos" loading="lazy"></div>
+      </div>
+
+      <div class="bonus-course-item fade-in">
+        <div class="course-image"><img src="images/Prancheta-4.png.webp" alt="Contabilidade para Negócios Digitais" loading="lazy"></div>
+        <div class="course-info">
+          <div class="bonus-badge">🎁 Bônus grátis</div>
+          <h3 class="course-name">📊 Contabilidade para Negócios Digitais</h3>
+          <p class="course-description">Aqui você encontrará todas as orientações contábeis essenciais para quem começa a vender na internet: como lidar com impostos, emissão de nota fiscal, abertura de empresa, vendas pelo CPF, como proceder se você é servidor público, e muito mais.</p>
+        </div>
+      </div>
+
+      <div class="bonus-course-item reverse fade-in">
+        <div class="course-info">
+          <div class="bonus-badge">🎁 Bônus grátis</div>
+          <h3 class="course-name">👥 Comunidade Exclusiva com Alunos</h3>
+          <p class="course-description">Uma comunidade interativa e ativa onde os alunos podem se conectar, compartilhar experiências e aprender juntos no dia a dia. Você nunca estará sozinho nessa jornada!</p>
+        </div>
+        <div class="course-image"><img src="images/Exclusive.webp" alt="Comunidade com Alunos" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       GUARANTEE
+  ═══════════════════════════ -->
+  <section class="guarantee-section-new">
+    <div class="container">
+      <div class="section-chip fade-in" style="margin:0 auto 18px; display:inline-flex; width:100%; justify-content:center;">Garantia</div>
+      <h2 class="section-heading fade-in" style="text-align:center; margin-bottom:16px;">Mas eu quero te deixar <span class="t-money">100% seguro</span> da sua decisão...</h2>
+      <p class="guarantee-subtitle fade-in">Eu vou fazer algo que pouquíssimas pessoas fazem.<br>Essa garantia é a prova real que todo o conhecimento lá de dentro funciona e eu estou disposta a trocar meu tempo (que é muito valioso) pelo seu sucesso.</p>
+      <div class="guarantee-two-columns">
+        <div class="guarantee-badge-column fade-in">
+          <img src="images/garantia_nova.webp" alt="Garantia de 90 dias" class="guarantee-image">
+        </div>
+        <div class="guarantee-text-column fade-in">
+          <div class="guarantee-text-box">
+            <p>Se em <strong>90 dias</strong>, você aplicar tudo que ensino lá dentro, me comprovar isso e não tiver <strong>NENHUM RESULTADO</strong>, eu vou te dar uma <strong>consultoria gratuita</strong> (o que não é nem um pouco barato, custando muito mais que 10x o investimento da Formação) para analisar seu negócio e identificar onde está o problema.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       PRICE
+  ═══════════════════════════ -->
+  <section class="price-anchor" id="preco">
+    <div class="container">
+      <h2 class="anchor-title fade-in">VEJA TUDO QUE VOCÊ RECEBERÁ</h2>
+      <div class="products-list fade-in">
+        <div class="product-item"><span class="product-name">✅ Formação Viver de Estudos</span></div>
+        <div class="product-item"><span class="product-name">✅ Conteúdos Complementares de Canva</span></div>
+        <div class="product-item"><span class="product-name">✅ Conteúdos Complementares de Criação de Materiais</span></div>
+        <div class="product-item"><span class="product-name">✅ Contabilidade para negócios digitais</span></div>
+        <div class="product-item"><span class="product-name">✅ Comunidade alunos no Telegram</span></div>
+        <div class="product-item"><span class="product-name">✅ Do zero ao Viver de Estudos</span></div>
+      </div>
+
+      <div class="price-highlight-box fade-in">
+        <div class="price-glow"></div>
+        <div class="price-offer-badge">⭐ Oferta Especial ⭐</div>
+        <div class="bf-installments">12x de apenas</div>
+        <div class="bf-installment-value">R$ 31,54</div>
+        <div class="bf-total-small">Ou R$ 297,90 à vista</div>
+        <div class="economy">⚡ Acesso imediato após o pagamento</div>
+        <a href="https://pay.hotmart.com/S93522658O?off=j0h9azo5&checkoutMode=10" class="main-cta pulse">🔥 COMPRAR AGORA!</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════
+       FAQ
+  ═══════════════════════════ -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="faq-title fade-in">Perguntas Frequentes</h2>
+      <div class="faq-grid">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Como eu sei que a Formação Viver de Estudos é para mim?</div><div class="faq-answer">Se você produz materiais de estudos, seja estudante, professor, concurseiro ou qualquer outra pessoa que faz materiais e deseja transformar isso em uma fonte de renda, faturar mais de 10 mil todos os meses, a comunidade é para você.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Como funciona o suporte?</div><div class="faq-answer">Via comentários nas aulas ou e-mail. Nossa equipe está sempre disponível para te ajudar!</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">O curso é Videoaula ou ebook?</div><div class="faq-answer">Todas as aulas são em formato de videoaula, com conteúdo prático e direto ao ponto!</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Quanto tempo de acesso?</div><div class="faq-answer">1 ano.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Busco um conhecimento mais avançado. A formação é para mim?</div><div class="faq-answer">Não, o conteúdo da formação é indicado para pessoas que querem começar a vender seus materiais de estudos na internet e fazer de 6 a 10 mil reais mensais. Se você já fatura mais que isso, ela não é para você.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Você ensina a criar o material do zero?</div><div class="faq-answer">Sim! Dentro da Formação Viver de Estudos tem um módulo completo te ensinando a criar seu material, seja em forma de resumo, ebooks, mapas mentais ou flashcards.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Tenho vergonha de aparecer. Esse curso é pra mim?</div><div class="faq-answer">Claro! Com as técnicas do treinamento você aprenderá a criar conteúdo e divulgar seu material com estratégia e não necessariamente precisa aparecer para ter bons resultados.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Quais são as formas de pagamento?</div><div class="faq-answer">Você pode pagar via cartão de crédito e parcelar em até 12x, ou à vista por cartão, ou PIX. O acesso é imediato ao pagamento.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Não entendo nada de marketing, irei conseguir acompanhar?</div><div class="faq-answer">SIM! O treinamento é direcionado para você que não tem experiência nenhuma com esse mercado. Cada passo é explicado de uma forma bem simples para que você entenda todas as etapas do processo.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Quanto tempo tenho de acesso ao curso?</div><div class="faq-answer">O acesso é de 1 ano, incluindo as atualizações nesse período.</div></div>
+      </div>
+      <div class="faq-cta-wrap fade-in">
+        <a href="https://pay.hotmart.com/S93522658O?off=j0h9azo5&checkoutMode=10" class="main-cta pulse">🔥 QUERO GARANTIR MINHA VAGA AGORA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════
+       FOOTER
+  ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Viver de Estudos. Todos os direitos reservados.</p>
+      <p>Este produto é distribuído pela plataforma Hotmart. Ao comprar, você concorda com os <a href="https://viverdeestudos.com.br/termos-de-uso/">Termos de Uso</a> e <a href="https://viverdeestudos.com.br/politica-privacidade/">Política de Privacidade</a>.</p>
+      <p>Os resultados apresentados são individuais e não constituem garantia de resultados futuros.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/5532984248673?text=Oi!%20Quero%20saber%20mais%20sobre%20a%20Forma%C3%A7%C3%A3o%20Viver%20de%20Estudos" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+  <script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+    function getParams() {
+      let t = "", e = window.top.location.href, r = new URL(e);
+      if (null != r) {
+        let a = r.searchParams.get("utm_source"), n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"), m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content");
+        -1 !== e.indexOf("?") && (t = "&sck=" + a + "|" + n + "|" + o + "|" + m + "|" + c)
+      }
+      return t
+    }
+    !function() {
+      var t = new URLSearchParams(window.location.search);
+      t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++)
+          -1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+      })
+    }();
+  </script>
+
+</body>
+</html>
