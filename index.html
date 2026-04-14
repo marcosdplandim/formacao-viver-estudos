@@ -36,8 +36,11 @@
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="images/Maria.webp" as="image" fetchpriority="high">
+  <style>@font-face{font-display:swap}</style>
 
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"></noscript>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1340,7 +1343,7 @@
           Como eu saí da frustração e transformei flashcards de revisão em um negócio que gerava mais de <span class="grad-gold">+R$ 10.000/Mês</span>
         </h3>
         <div class="about-maria-image fade-in">
-          <img src="images/Maria.webp" alt="Maria - Criadora do Viver de Estudos" loading="lazy">
+          <img src="images/Maria.webp" alt="Maria - Criadora do Viver de Estudos" loading="eager" fetchpriority="high" width="380" height="500">
         </div>
         <div class="about-maria-text fade-in">
           <p class="about-maria-paragraph">Eu sou a Maria, criadora do Viver de Estudos. Trabalhava 8 horas por dia, estudava para concurso nos intervalos, fazia faculdade à noite, tudo isso por R$ 1.500. Venho de uma família simples e achava que ganhar R$ 2.500 seria "o máximo". O fundo do poço foi perceber que estava trocando minha vida inteira por migalhas. Foi quando comecei a vender os flashcards e materiais que criava para mim mesma. Começou com R$ 500/mês e explodiu quando me dediquei de verdade.</p>
@@ -1620,7 +1623,7 @@
       <p class="guarantee-subtitle fade-in">Eu vou fazer algo que pouquíssimas pessoas fazem.<br>Essa garantia é a prova real que todo o conhecimento lá de dentro funciona e eu estou disposta a trocar meu tempo (que é muito valioso) pelo seu sucesso.</p>
       <div class="guarantee-two-columns">
         <div class="guarantee-badge-column fade-in">
-          <img src="images/garantia_nova.webp" alt="Garantia de 90 dias" class="guarantee-image">
+          <img src="images/garantia_nova.webp" alt="Garantia de 90 dias" class="guarantee-image" width="260" height="260" loading="lazy">
         </div>
         <div class="guarantee-text-column fade-in">
           <div class="guarantee-text-box">
@@ -1722,8 +1725,7 @@
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 
-  <script>
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+  <script defer>
     function getParams() {
       let t = "", e = window.top.location.href, r = new URL(e);
       if (null != r) {
