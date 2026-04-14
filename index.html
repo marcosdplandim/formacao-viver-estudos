@@ -236,17 +236,11 @@
       box-shadow: 0 0 0 1px var(--line), 0 32px 80px rgba(0,0,0,0.5);
       position: relative;
       z-index: 1;
-      /* Reserva espaço pro player antes de carregar — elimina CLS */
-      aspect-ratio: 16 / 9;
-      width: 100%;
-      contain: layout;
     }
     .video-wrapper vturb-smartplayer {
-      position: absolute;
-      inset: 0;
+      display: block;
       width: 100% !important;
       max-width: 100% !important;
-      height: 100%;
     }
 
     /* ── SOCIAL PROOF BAR ── */
